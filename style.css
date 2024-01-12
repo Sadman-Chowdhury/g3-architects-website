@@ -117,6 +117,20 @@ main{
     margin-bottom: 10px;
 }
 
+.sponsor{
+    text-align: center;
+}
+.sponsor-img-container{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.sponsor-img-container img{
+    width: 165px;
+}
+
 
 
 
@@ -125,15 +139,18 @@ main{
     header{
         padding: 20px;
     }
-    nav, .team-container{
+    nav, .team-container, .facts-card-container, .sponsor-img-container{
         flex-direction: column;
     }
     .team-img-container{
         grid-template-columns: 1fr;
     }
-    .team-content{
+    .team-content, .facts-card-container{
         padding-left: 20px;
         padding-right: 20px;
+    }
+    .facts-card-container{
+        gap: 10px;
     }
 }
 
@@ -142,7 +159,7 @@ main{
     header{
         padding: 50px;
     }
-    nav, .team-container{
+    nav, .team-container, .sponsor-img-container{
         flex-direction: column;
     }
 }
